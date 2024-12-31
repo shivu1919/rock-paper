@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper</title>
+</head>
+
+<style>
+    body{
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    div{
+        height: 90vh;
+        width:600px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    img{
+        cursor: pointer;
+    }
+
+
+
+</style>
+
+<body>
+    <div class="container">
+        <h1>Select your Move</h1>
+            <img src="paper.png" alt="" width="100" onclick="Paper()">
+
+            <img src="scissor.png" alt="" width="100" onclick="Scissor()">
+            
+            <img src="rock.png" alt="" width="100" onclick="Rock()">
+
+            <h1 id="computer"></h1>
+            <h2 id="result"> </h2>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
